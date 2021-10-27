@@ -21,7 +21,12 @@ console.log('Total de objetos deste array:', apps.length);
 console.log('A estrutura do 1.o objeto:');
 console.log(apps[0]);
 
+console.log('EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.');
+
 // EXERCICIO 1: use reduce() para calcular o numero total de installs para todas as apps.
+somaInstalls = apps.reduce((ant, atual) => ant + atual.installs,0);
+console.log(somaInstalls);
+
 
 
 // EXERCICIO 2: use filter() para selecionar somente apps com score maior que quatro (> 4) 
