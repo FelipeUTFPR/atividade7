@@ -33,4 +33,10 @@ console.log('EXERCICIO 2: use filter() para selecionar somente apps com score ma
 scoreMaior4 = apps.filter((app) => app.score > 4);
 console.log(scoreMaior4);
 // EXERCICIO 3: use map() para mudar o atributo appname para lowerCase
+console.log('EXERCICIO 3: use map() para mudar o atributo appname para lowerCase');
+appnameToLowerCase = apps.map((app) => { 
+    app.appname = app.appname.toLowerCase();
+    return app;
 
+});
+console.log(appnameToLowerCase);
